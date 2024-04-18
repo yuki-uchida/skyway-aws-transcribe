@@ -37,7 +37,7 @@ export const useTranscribe = () => {
     const command = new StartStreamTranscriptionCommand({
       LanguageCode: "ja-JP",
       MediaEncoding: "pcm",
-      MediaSampleRateHertz: 44100,
+      MediaSampleRateHertz: 48000,
       AudioStream: audioStream(),
     });
     const response = await client.send(command);

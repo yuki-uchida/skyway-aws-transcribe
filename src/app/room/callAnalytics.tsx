@@ -60,7 +60,7 @@ export const useCallAnalytics = () => {
     const command = new StartCallAnalyticsStreamTranscriptionCommand({
       LanguageCode: "en-US",
       MediaEncoding: "pcm",
-      MediaSampleRateHertz: 44100,
+      MediaSampleRateHertz: 48000,
       AudioStream: audioStream(),
     });
 
